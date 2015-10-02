@@ -9,11 +9,11 @@ To run the turing machine, do:
 '("S101101110111110111111101111111111101111111111111p1111111111111111swq^00" n)
 ```
 
-`prime-step` will continue to call itself until it runs out of zeroes, at which point it will return the current tape and state. Add more zeroes if you want more primes, but be warned, it will get very slow.
+`prime-step` will continue to call itself until it runs out of zeros, at which point it will return the current tape and state. Add more zeros if you want more primes, but be warned, it will get very slow.
 
 ## The algorithm
 
-My algorithm uses 14 states and 10 symbols. It assumes the tape is all zeroes at the start.
+My algorithm uses 14 states and 10 symbols. It assumes the tape is all zeros at the start.
 
 Operations: Right is notated by `R`, left by `L`, print symbol `x` by `Px`, and `a` at the end of the operation means put the machine in state `a`.
 
