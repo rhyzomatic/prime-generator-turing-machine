@@ -74,3 +74,6 @@
                                        [else (se (right tape) 'n)])]
               [(equal? state 'begin) (se (print (right (print (right (print (right (right (print (right (print tape 'S)) '1))) '1)) '1)) 'w) 'i)]))
         machine)))
+
+(define (prime-gen n)
+  (prime-step (se (word '^ ((repeated (lambda (x) (word x "0")) n) "")) 'begin)))
