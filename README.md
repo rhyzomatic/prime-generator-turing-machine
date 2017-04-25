@@ -26,47 +26,48 @@ The general outline:
 5. If so, add one to the number. If not, check the next prime to the left.
 6. If it reaches the `S` (start), begins the algorithm again at step 2.
 
-State | Symbol | Operation
-------|--------|---------------------------
-a     | s      | Pt b
-      | p      | c
-      | else   | L a
-b     | q      | Px a
-      | 0      | L d
-      | else   | R b
-c     | t      | Ps
-      | q      | a
-      | 0      | Pq L e
-      | else   | R c
-d     | x      | Pq L d
-      | t,s    | P1 L d
-      | p      | Pw L d
-      | 0      | Pp f
-      | S      | h
-      | w,l    | L d
-e     | x      | Pq L e
-      | t      | P1 L e
-      | p      | P0 g
-      | else   | L e
-f     | w      | a
-      | l      | Ps R f
-      | else   | f
-g     | q      | L Pw L j
-      | else   | R g
-h     | w      | P0 Rh
-      | q      | P1 Rh
-      | 0      | Pw L i
-      | else   | R h
-i     | 0      | Pp k
-      | else   | L i
-j     | 0      | Pp f
-      | else   | L j
-k     | 0      | Pq m
-      | else   | R k
-m     | l      | Ps n
-      | p      | f
-      | else   | L m
-n     | 0      | Pq m
-      | p      | R n
-begin | else   | Ps R P1 R R P1 R P1 R Pw i
+
+| State | Symbol | Operation                  |
+|-------|--------|----------------------------|
+| a     | s      | Pt b                       |
+|       | p      | c                          |
+|       | else   | L a                        |
+| b     | q      | Px a                       |
+|       | 0      | L d                        |
+|       | else   | R b                        |
+| c     | t      | Ps                         |
+|       | q      | a                          |
+|       | 0      | Pq L e                     |
+|       | else   | R c                        |
+| d     | x      | Pq L d                     |
+|       | t,s    | P1 L d                     |
+|       | p      | Pw L d                     |
+|       | 0      | Pp f                       |
+|       | S      | h                          |
+|       | w,l    | L d                        |
+| e     | x      | Pq L e                     |
+|       | t      | P1 L e                     |
+|       | p      | P0 g                       |
+|       | else   | L e                        |
+| f     | w      | a                          |
+|       | l      | Ps R f                     |
+|       | else   | f                          |
+| g     | q      | L Pw L j                   |
+|       | else   | R g                        |
+| h     | w      | P0 Rh                      |
+|       | q      | P1 Rh                      |
+|       | 0      | Pw L i                     |
+|       | else   | R h                        |
+| i     | 0      | Pp k                       |
+|       | else   | L i                        |
+| j     | 0      | Pp f                       |
+|       | else   | L j                        |
+| k     | 0      | Pq m                       |
+|       | else   | R k                        |
+| m     | l      | Ps n                       |
+|       | p      | f                          |
+|       | else   | L m                        |
+| n     | 0      | Pq m                       |
+|       | p      | R n                        |
+| begin | else   | Ps R P1 R R P1 R P1 R Pw i |
 
